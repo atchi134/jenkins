@@ -2,7 +2,7 @@
 
 node {
     stage('gitclone') {
-        git 'https://github.com/atchi134/apps.git'
+        git 'https://github.com/atchi134/jenkins.git'
 	}
     
     stage('maven clean') {
