@@ -1,4 +1,4 @@
-git 'https://github.com/atchi134/apps.git'
+
 
 node {
     stage('gitclone') {
