@@ -1,9 +1,7 @@
 
 
 node {
-    stage('gitclone') {
-        git 'https://github.com/atchi134/apps.git'
-        }
+    
     
     stage('maven clean') {
         sh 'mvn clean'
