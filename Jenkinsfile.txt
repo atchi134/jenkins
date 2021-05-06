@@ -2,8 +2,8 @@
 
 node {
     stage('gitclone') {
-        git 'https://github.com/atchi134/jenkins.git'
-	}
+        git 'https://github.com/atchi134/apps.git'
+        }
     
     stage('maven clean') {
         sh 'mvn clean'
@@ -20,6 +20,11 @@ node {
 	stage('maven test') {
         sh 'mvn test'
     }
+
+	stage('maven deploy') {
+        sh 'mvn deploy'
+    }
 	
 	}
 	
+
